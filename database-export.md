@@ -2,7 +2,7 @@
 
 ## 利用 SELECT...INTO OUTFILE 语句组合导出数据  
 
-该语句组合的语法为：正常的 SELECT 语句，后跟 INTO OUTFILE，最后加上要导出的文件名。默认的输出格式和 LOAD DATA 一样，因此下列语句将表 tutorials_tbl 导出为 /tmp/tutorials.txt 》》a 制表符分隔，以换行键终止的文件tab-delimited, linefeed-terminated file》》》   
+该语句组合的语法为：使用正常的 SELECT 语句，后跟 INTO OUTFILE，最后加上要导出的文件名。默认的输出格式和 LOAD DATA 一样，因此下列语句会将表 tutorials_tbl 导出为 /tmp/tutorials.txt，其中的数据以制表符分隔开，以换行符作为每行的终止符。
 
 ```
 mysql> SELECT * FROM tutorials_tbl 
@@ -10,7 +10,7 @@ mysql> SELECT * FROM tutorials_tbl
 
 ``` 
 
-你可以通过一些选项来改变输出格式》》。将表 tutorials_tbl 以CSV 格式 CRLF终止行，使用以下语句：   
+你可以通过一些选项来改变输出格式，来指定如何以引用并限定列与记录。下面这个例子将表 tutorials_tbl 以逗号分隔各值，以 CRLF（回车换行符）来作为行的终止符：    
 
 ```
 mysql> SELECT * FROM passwd INTO OUTFILE '/tmp/tutorials.txt'
@@ -19,7 +19,7 @@ mysql> SELECT * FROM passwd INTO OUTFILE '/tmp/tutorials.txt'
 
 ```
 
-**SELECT ... INTO OUTFILE** 有下列特点：   
+**SELECT ... INTO OUTFILE** 具有下列特点：   
 
 - 输出文件直接由 MySQL 服务器创建，因此文件名应该指明其在服务器主机上的保存位置。该语句没有 LOCAL 版，这一点跟 LOAD DATA 不同。   
 - 必须拥有 MySQL 的 FILE 权限，才能执行 SELECT ... INTO OUTFILE。   
@@ -29,7 +29,7 @@ mysql> SELECT * FROM passwd INTO OUTFILE '/tmp/tutorials.txt'
 
 ## 将表导出为原始数据   
 
-`mysqldump` 程序用于复制或备份表与数据库。它能 》》   
+`mysqldump` 程序用于复制或备份表与数据库。它能把表输出为一个原始数据文件，或者是一个能重建表中记录的 INSERT 语句集合。
 
 要想把表转储为一个数据文件，必须指定一个 `--tab` 选项，用它来指明 MySQL 服务器写入文件的目录。   
 
