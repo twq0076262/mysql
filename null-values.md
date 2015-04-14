@@ -1,3 +1,5 @@
+# MySQL NULL Values
+
 前面已经介绍了如何利用 SQL 的 **SELECT** 命令配合 **WHERE** 子句来获取 MySQL 表中的数据，但假如尝试给出一个条件，将字段或列值与 NULL 比对，则会出现异常。   
 
 为了处理这种情况，MySQL 提供了三种运算符：   

@@ -1,3 +1,5 @@
+# MySQL 安装
+
 ## 下载 MySQL  
 
 MySQL 的全部下载链接都在这个页面：[MySQL 下载](http://www.mysql.com/downloads/)。选择所需的 *MySQL Community Server* 版本号，并且尽可能准确地选择所需平台。    

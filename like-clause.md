@@ -1,3 +1,5 @@
+# MySQL Like Clause
+
 前面几节讲解了如何利用 SQL 的 **SELECT** 命令来获取 MySQL 表中的数据，以及如何利用 **WHERE** 子句这种条件子句来选择所需的记录。  
 
 当我们需要进行精确匹配时，可以在WHERE子句中加入等号（`=`），就像是 `if tutorial_author = 'Sanjay'` 这种 `if` 条件语句一样。但有时我们会想在所有的结果中过滤 tutorial_author 字段包含 "jay" 字符的结果。这时就应该利用 SQL 的 **LIKE** 子句搭配 WHERE 子句来解决。

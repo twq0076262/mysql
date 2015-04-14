@@ -1,3 +1,5 @@
+# MySQL 删除查询
+
 如果想从 MySQL 表中删除记录，就要用到 SQL 命令 **DELETE FROM** 。可以在命令行中使用该命令，也可以在 PHP 脚本中使用它。   
 
 ## 语法格式  
@@ -31,7 +33,6 @@ Query OK, 1 row affected (0.23 sec)
 
 mysql>
   
-
 ```  
 
 ## 利用 PHP 脚本来删除数据  

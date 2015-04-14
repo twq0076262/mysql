@@ -1,5 +1,5 @@
 
-# 7. 创建 MySQL 数据库  
+# 创建 MySQL 数据库  
 
 
 ## 使用 mysqladmin 创建数据库  

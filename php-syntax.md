@@ -1,3 +1,5 @@
+# MySQL PHP语法
+
 MySQL 可以很好地适用于多种编程语言，比如PERL、C、C++、JAVA，以及 PHP。由于可以开发 Web 应用程序，PHP 是其中最流行的一门语言。  
 
 本教程讲解重点在于PHP 环境中使用 MySQL。如果你对使用 PERL 来操作 MySQL 有兴趣，可以参看这个教程：**PERL 与 MySQL 教程**   

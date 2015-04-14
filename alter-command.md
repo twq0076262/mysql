@@ -1,4 +1,4 @@
-# 24. MySQL ALTER 命令
+# MySQL ALTER 命令
 
 利用 MySQL 的 **ALTER** 命令可以很方便地修改表名与表字段名，以及添加或删除表中已有的列。    
 

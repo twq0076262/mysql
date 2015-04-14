@@ -1,3 +1,5 @@
+# MySQL 数据导出
+
 将表中数据导出为一个文本文件，最简单的方法是用 SELECT...INTO OUTFILE 语句，它会将查询结果直接导出为服务器主机上的一个文件。   
 
 ## 利用 SELECT...INTO OUTFILE 语句组合导出数据  

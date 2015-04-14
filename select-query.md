@@ -1,3 +1,5 @@
+# MySQL 选择查询
+
 SQL 的 **SELECT** 命令用于从 MySQL 数据库中获取数据。可以在mysql> 提示符中使用这一命令，也可以利用 PHP 等脚本来完成。   
 
 ## 语法格式   
@@ -181,7 +183,6 @@ echo "Fetched data successfully\n";
 mysql_close($conn);
 ?>
   
-
 ```
 
 以上三个范例都会产生同样的结果。    

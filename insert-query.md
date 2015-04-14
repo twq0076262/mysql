@@ -1,3 +1,5 @@
+# MySQL 插入查询
+
 要想在 MySQL 表中插入数据，需要使用 **INSERT INTO** 这个 SQL 命令。既可以使用mysql> 提示符方式，也可以使用 PHP 等脚本来完成。  
 
 ## 语法格式 
@@ -64,7 +66,7 @@ mysql>
 
   
  
-
+```
 	<html>
 	<head>
 	<title>Add New Record in MySQL Database</title>
@@ -147,7 +149,7 @@ mysql>
 	?>
 	</body>
 	</html>
-
+```
 
 
 

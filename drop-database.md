@@ -1,3 +1,5 @@
+# MySQL 终止数据库
+
 ## 利用 mysqladmin 删除 MySQL 数据库  
 
 

@@ -1,3 +1,5 @@
+# MySQL 数据库信息
+
 MySQL可为你提供3类有价值的信息：  
 
 - **查询结果信息**  受SELECT、UPDATE 或 DELETE 语句影响的记录数量。
