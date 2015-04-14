@@ -70,13 +70,9 @@ password *****
 
 ## 处理引号与特殊字符    
 
+FIELDS 子句能指定除了 TERMINATED BY 之外的其他格式选项。默认情况下，LOAD DATA 会假定值不加引号，并把反斜杠（`\`）解释为表示特殊意义的转义字符。要想明确指定引号字符，需使用 ENCLOSED BY 。MySQL 会在处理输入时将该字符从数据值末尾清除掉。改变默认的转义字符，需使用 ESCAPED BY。  
 
-The FIELDS clause can specify other format options besides TERMINATED BY. By default, LOAD DATA assumes that values are unquoted and interprets the backslash (\) as an escape character for special characters. To indicate the value quoting character explicitly, use ENCLOSED BY; MySQL will strip that character from the ends of data values during input processing. To change the default escape character, use ESCAPED BY.  
 
-
-FIELDS 子句能指定除了 TERMINATED BY 之外的其他格式选项。默认情况下，LOAD DATA 会假定值不加引号，并把反斜杠（`\`）解释为表示特殊意义的转义字符。要想明确指出》，使用 ENCLOSED BY 即可。MySQL 会在处理输入时将该字符从数据值末尾清除掉。改变默认的转义字符，使用 ESCAPED BY。  
-
-When you specify ENCLOSED BY to indicate that quote characters should be stripped from data values, it's possible to include the quote character literally within data values by doubling it or by preceding it with the escape character. For example, if the quote and escape characters are " and \, the input value "a""b\"c" will be interpreted as a"b"c.
 
 
 在指定 ENCLOSED BY 来表示引号字符应该从数据值末尾清除时，有可能在数据值中包含引号字符，或在其之前添加转义字符。比如，如果引号和转义字符是`"`和`\`，那么输入值`"a""b\"c"`就会被解读为`a"b"c`。  
